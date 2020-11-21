@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sixteen clothing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+
+ <style type="text/css">
+
+
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+    header h2
+     {
+  
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Poppins',sans-serif;
+    font-style:normal;
+    line-height: 29px;
+    color: white;
+
+
+
+
+}
+
+
+
+/* preloader*/
+#loader
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  border:20px solid red;
+  margin: -100px 0 0 -35px;
+  
+
+
+  animation: spin 2s linear infinite;
+
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.navbar {
+
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+.nav-link
+{
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+.nav-item
+{
+
+padding-bottom: 10px;
+}
+
+.navbar-toggler-icon
+{
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
+  background:no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.navbar-toggler
+{
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: red;
+
+}
+
+.navbar .navbar-toggler
+{
+  border-color: #fff;
+    background-color: #fff;
+    height: 36px;
+    outline: none;
+    border-radius: 0px;
+    position: absolute;
+    right: 20px;
+
+    top: 25px;
+}
+.navbar-collapse
+{
+  
+  align-items: center;
+  text-align: center;
+}
+
+@media(max-width: 992px)
+{
+  #navbarResponsive
+  {
+ 
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+    
+    }
+
+.navbar .navbar-nav a.nav-link 
+{
+    padding: 15px 0px;
+    color: #1e1e1e!important;
+}
+
+  .nav-item
+{
+
+ border-bottom: 1px solid lightgrey !important;
+ width: 94%;
+
+ }
+}
+
+
+.heading
+{
+  color: #f33f3f;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+div
+{
+  display: block;
+}
+
+
+
+
+
+.navbar .navbar-toggler-icon:after
+{
+  content: '\f0c9';
+  color: #f33f3f;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'fontAwesome';
+}
+
+
+
+     
+
+  
+      
+
+         .container
+         {
+          width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+     
+         }
+
+
+ .abanner img {
+    width: 100%;
+    height:500px;
+    opacity: 0.5;
+       text-align: center;
+         position: relative;
+         color: white;
+       
+
+
+  }
+
+
+
+
+
+
+ .active
+ {
+  border-bottom: 2px solid red;
+ }
+
+
+
+    .clr
+       {
+        background-color: #212529;
+        height: auto;
+        color: white;
+         }
+
+
+
+.abanner {
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    display: block;
+    width: 100% !important;
+}
+
+
+.abanner h3
+
+  {
+    
+    position:relative;
+    top: -350px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #f33f3f;
+      
+  }
+  .abanner p
+
+  {
+    
+    position: relative;
+    top: -350px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 62px;
+    line-height: 74px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2PX;
+      
+  }
+  .b1
+  {
+    height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+
+
+.footer
+{
+  position: absolute;
+  text-align: center;
+}
+
+
+.footer .para p
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 2.4vw;
+  color: #4a4a4a;
+}
+
+.ourlocation h2
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #1e1e1e;
+}
+
+.mright
+{
+  padding-top: 70px;
+}
+
+.mright h4
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #1a6692;
+
+}
+
+
+
+.white-font
+
+{
+  color: white;
+}
+
+.black-font{
+  color:black;
+}
+.mright p
+{
+  padding-top: 20px;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4a4a4a;
+}
+
+.message 
+{
+  margin-top: 70px;
+}
+
+.message h2
+{
+    font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #1e1e1e;
+}
+.button1
+ {
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border:none;
+  }
+  .name
+  {
+    margin-top: 50px;
+    line-height: 3.5vw;
+    width: 50vw;
+  }
+  .E_mail
+  {
+    line-height: 3.5vw;
+    margin-top: 30px;
+    width: 50vw;
+  }
+  .sub
+  {
+    line-height: 3.5vw;
+    margin-top: 30px;
+    width: 50vw;
+  }
+  .msg
+  {
+    line-height: 3.5vw;
+    margin-top: 30px;
+   
+    width: 50vw;
+  }
+
+
+.links
+{
+  padding-top: 45px;
+}
+  .links a
+  {
+    
+    line-height: 50px;
+    font-size: 17px;
+    color: #1a6692;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+  }
+  
+
+  .links a:hover
+  {
+    color: red;
+  }
+
+  .hapycustomers
+{
+ margin-top: 100px;
+}
+.hapycustomers h2
+{
+
+    font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #1e1e1e;
+}
+  
+  .bottombord
+  {
+    border-bottom: 1px solid lightgrey;
+    padding-top: 5px;
+  }
+header {
+    position:fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    display: block;
+
+
+}
+
+
+nav ul li a:hover
+{
+  color: #ffffff;
+  border-bottom: 2px solid red;
+
+}
+.active1 {
+  background-color: white;
+}
+
+
+  </style>
+
+
+</head>
+
+
+<body onload="myFunction4()" style="margin:0;">
+<div id="loader"></div>
+<div style="display: none;" id="myDiv">
+
+  <div style="height: 80px;">
+<header class="">
+  
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+  
+    <a class="navbar-brand">
+    <h2 class="white-font">SIXTEEN<span class="heading">
+     CLOTHING</span></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link" href="asssesment4.html">Home
+        </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link " href="ourproduct.html">Our Products</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Contact Us</a>
+    </li>
+   
+  </ul>
+ 
+</div>
+</div>
+</nav>
+
+
+</header>
+</div>
+
+
+
+
+<div class="con">
+  <div class="abanner">
+  <div class="clr">
+    <img src="image2.jpg" alt="hh">
+  </div>
+
+    <h3>CONTACT US</h3>
+    <p>LET'S GET IN TOUCH</p>
+  
+</div>
+</div>
+
+<div class="container-fluid ourlocation " >
+  <div class="container">
+    <h2>Our Location on Maps</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-8" style="padding-top: 70px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14235.843791902864!2d80.9760448!3d26.8729818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1605785687609!5m2!1sen!2sin" width=100% height="330" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4">
+        <div class="mright">
+          <h4>About our office</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.
+          </p>
+        </div>
+      </div>
+  </div>
+  
+</div>
+
+
+<div class="container-fluid message">
+  <div class="container">
+    <h2>Send Us a Message</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="cform">
+          <form >
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" id="name" class="name" placeholder="Full Name">
+                    </fieldset>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="Email" id="email" class="E_mail" placeholder="E-mail Address">
+                  </fieldset>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="subject" type="text" id="sub" class="sub" placeholder="Subject">
+                </fieldset>
+              </div>
+
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <textarea name="message" type="text" id="message" class="msg" placeholder="Your Message"></textarea>
+                 
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <fieldset>
+                  <button type="button" class="button1">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="links">
+           <a class = "link1" onclick="myFunction()">Accordion Title One</a>
+          <p id='demo' style='display: none'>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p> 
+          
+
+          <a class = "link2" onclick="myFunction1()">Second Title Here</a>
+          <p id='demo1' style='display: none'>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+          Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p> 
+          
+          <a class = "link3" onclick="myFunction2()">Accordion Title Three</a>
+          <p id='demo2' style='display: none'>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+          Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
+          <a class = "link4" onclick="myFunction3()">Fourth Accordtion Title</a>
+          <p id='demo3' style='display: none'>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+          Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti elite.</p>
+        </div>
+        <div class="row" style="padding-top: 100px;letter-spacing: 5px;">
+              <div class="col-md-12">
+                  <i class="fa fa-twitter-square" style="font-size:36px"></i>
+  
+           
+                  <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                  <i class="fa fa-linkedin-square"style="font-size:36px"></i>
+                  <i class="fa fa-behance-square" style="font-size:36px"></i>
+                </div>
+              </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container-fluid hapycustomers">
+  <div class="container">
+    <h2>Our Happy Customers</h2>
+    <div class="bottombord"></div>
+      <div class="happy-clients" >
+      <div class="container" style="margin-top: 75px; padding-left: 0px; padding-right: 0px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-clients owl-carousel">
+              <div class="client-item a60">
+                <img src="client-01.png" alt="djj">
+              </div>
+             
+              <div class="client-item a60">
+                <img src="client-01.png" alt="dd">
+              </div>
+             
+              <div class="client-item a60">
+                <img src="client-01.png" alt="dd">
+              </div>
+             
+              <div class="client-item a60">
+                <img src="client-01.png" alt="ddd">
+              </div>
+             
+              <div class="client-item a60">
+                <img src="client-01.png" alt="dee">
+              </div>
+             
+              <div class="client-item a60">
+                <img src="client-01.png" alt="huihe">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer style="margin-top: 100px;margin-bottom: 30px; text-align: center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="para">
+          <p>
+            COPYRIGHT @2020 SIXTEEN CLOTHING CO., LTD. -DESIGN:<a href="#" style="color: #f33f3f;"> 
+             TEMPLATEMO</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+
+<script>
+
+    jQuery( document ).ready(function( $ ) {
+
+
+        if ($('.owl-clients').length) {
+            $('.owl-clients').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                items: 1,
+                margin: 30,
+                autoplay: false,
+                smartSpeed: 700,
+                autoplayTimeout: 6000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0
+                    },
+                    460: {
+                        items: 1,
+                        margin: 0
+                    },
+                    576: {
+                        items: 3,
+                        margin: 20
+                    },
+                    992: {
+                        items: 5,
+                        margin: 30
+                    }
+                }
+            });
+        }
+
+});
+
+
+
+    $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 500) {
+            $(".navbar").addClass("active1");
+            $(".nav-link").addClass("black-font")
+            $(".white-font").addClass("black-font")
+        } else {
+           $(".navbar").removeClass("active1");
+           $(".nav-link").removeClass("black-font")
+           $(".white-font").removeClass("black-font")
+        }
+    });
+});
+ 
+
+
+
+
+  function myFunction()
+   {
+    var text = document.getElementById("demo")
+    if (text.style.display=="none") {
+      text.style.display = "block";
+    }
+    else
+    {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction1()
+   {
+    var text = document.getElementById("demo1")
+    if (text.style.display=="none") {
+      text.style.display = "block";
+    }
+    else
+    {
+      text.style.display = "none";
+    }
+  }
+ function myFunction2()
+   {
+    var text = document.getElementById("demo2")
+    if (text.style.display=="none") {
+      text.style.display = "block";
+    }
+    else
+    {
+      text.style.display = "none";
+    }
+  }
+ function myFunction3()
+   {
+    var text = document.getElementById("demo3")
+    if (text.style.display=="none") {
+      text.style.display = "block";
+    }
+    else
+    {
+      text.style.display = "none";
+    }
+  }
+
+
+var myVar;
+function myFunction4(){
+  myVar=setTimeout(showPage,1000);
+}
+
+function showPage()
+{
+  document.getElementById("loader").style.display="none";
+  document.getElementById("myDiv").style.display="block";
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sixteen clothing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+
+
+header {
+    position:fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    display: block;
+
+
+}
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+    header h2
+     {
+  
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Poppins',sans-serif;
+    font-style:normal;
+    line-height: 29px;
+    color: white;
+
+
+
+
+}
+
+
+#loader
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  border:20px solid red;
+  margin: -100px 0 0 -35px;
+  
+
+
+  animation: spin 2s linear infinite;
+
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+.navbar {
+
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+.nav-link
+{
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+.nav-item
+{
+
+padding-bottom: 10px;
+}
+
+.navbar-toggler-icon
+{
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
+  background:no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.navbar-toggler
+{
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: red;
+
+}
+
+.navbar .navbar-toggler
+{
+  border-color: #fff;
+    background-color: #fff;
+    height: 36px;
+    outline: none;
+    border-radius: 0px;
+    position: absolute;
+    right: 20px;
+
+    top: 25px;
+}
+.navbar-collapse
+{
+  
+  align-items: center;
+  text-align: center;
+}
+
+@media(max-width: 992px)
+{
+  #navbarResponsive
+  {
+ 
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+    
+    }
+
+.navbar .navbar-nav a.nav-link 
+{
+    padding: 15px 0px;
+    color: #1e1e1e!important;
+}
+
+  .nav-item
+{
+
+ border-bottom: 1px solid lightgrey !important;
+ width: 94%;
+
+ }
+}
+
+
+.heading
+{
+  color: #f33f3f;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+div
+{
+  display: block;
+}
+
+
+
+
+
+.navbar .navbar-toggler-icon:after
+{
+  content: '\f0c9';
+  color: #f33f3f;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'fontAwesome';
+}
+
+
+
+     
+
+  
+      
+
+         .container
+         {
+          width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+     
+         }
+
+
+ .abanner img {
+    width: 100%;
+    height:500px;
+    opacity: 0.5;
+       text-align: center;
+         position: relative;
+         color: white;
+       
+
+
+  }
+
+
+
+
+
+
+ .active
+ {
+  border-bottom: 2px solid red;
+  color: red
+ }
+
+
+
+    .clr
+       {
+        background-color: #212529;
+        height: auto;
+        color: white;
+         }
+
+
+
+.abanner {
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    display: block;
+    width: 100% !important;
+}
+
+
+.abanner h3
+
+  {
+    
+    position:relative;
+    top: -350px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #f33f3f;
+      
+  }
+  .abanner p
+
+  {
+    
+    position: relative;
+    top: -350px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 62px;
+    line-height: 74px;
+    font-weight: 500;
+    font-style: normal;
+      
+  }
+  .b1
+  {
+    height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+
+
+.footer
+{
+  position: absolute;
+  text-align: center;
+}
+
+
+.footer .para p
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 2.4vw;
+  color: #4a4a4a;
+}
+
+
+.stars
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #f33f3f;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+ .latestproducts
+ {
+  position: relative;
+
+  height: auto;
+  width: 100%;
+ }
+
+
+.item
+{
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.item img
+{
+  width: 100%;
+  overflow: hidden;
+}
+
+img
+{
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+.cimg1 a h4
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #1a6692;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.cimg1 h6
+{
+    font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #121212;
+  padding-left: 30px; 
+}
+
+.cimg1 p
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4a4a4a;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+.cimg1 span
+{
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #f33f3f;
+  padding-left: 30px;
+
+}
+
+
+.latestproducts .heading3
+{
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+  
+
+}
+
+.latestproducts .heading3 ul li
+{
+  display: inline;
+
+}
+.latestproducts .heading3 li
+{
+  text-transform: uppercase;
+  
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vw;
+  line-height: 2.4vw;
+  color: #212529;
+}
+
+.latestproducts ul.box1
+{
+  margin-top: 30px;
+  text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.latestproducts ul.box1 li
+{
+  display: inline-block;
+  margin:0px 2px;
+
+}
+
+.white-font
+
+{
+  color: white;
+}
+
+.black-font{
+  color:black;
+}
+
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 10px;
+}
+
+ 
+.pagination a.active 
+{
+  background-color: red;
+  color: white;
+
+}
+
+.pagination a:hover:not(.active)
+ {
+  background-color: red;
+color: white;
+}
+
+
+.heading3 ul li
+{
+  cursor: pointer;
+}
+
+.heading3 ul li:hover
+{
+
+color: red;
+}
+
+.active1 {
+  background-color: white;
+}
+ </style>
+
+</head>
+
+
+<body onload="myFunction4()" style="margin:0;">
+<div id="loader"></div>
+<div style="display: none;" id="myDiv">
+
+
+  <div style="height: 80px;">
+<header class="">
+  
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+  
+    <a class="navbar-brand">
+    <h2 class="white-font">SIXTEEN<span class="heading">
+     CLOTHING</span></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link" href="asssesment4.html">Home
+        </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link active" href="#">Our Products</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </li>
+   
+  </ul>
+ 
+</div>
+</div>
+</nav>
+
+
+</header>
+</div>
+
+
+
+<div class="con">
+	<div class="abanner">
+  <div class="clr">
+    <img src="image2.jpg" alt="hh">
+  </div>
+  <div class="text-center position:relative">
+  	<h3>NEW ARRIVALS</h3>
+    <p>SIXTEEN PRODUCTS</p>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="container latestproducts" >
+  <div class="">
+    <div class="row row1">
+    <div class="col-md-12" >
+      <div class="heading3">
+         <ul>
+           <li style="color: red;">All Products</li>&emsp;
+           <li>Featured</li>&emsp;
+           <li>FLASH DEALS</li>&emsp;
+           <li>LAST MINUTE</li>&emsp;
+         </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_01.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_02.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+
+
+                <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_03.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  <div class="row">
+        <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_04.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_05.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+
+
+                <div class="col-md-4" >
+          <div class="item">
+            <a href="#">
+              <img src="product_06.jpg" alt="dbb">
+            </a>
+            <div class="cimg1">
+              <a href="#">
+                <h4 >Title goes here</h4>
+              </a>
+              <h6>$25.75</h6>
+              <p>
+                Loreum ipsume dolor sit ameet, adipisicing elite.Itaque, corporis nulla aspernatur.
+              </p>
+              <ul class="stars">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+
+              </ul>
+              <span>Reviews(24)</span>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+    
+
+
+   <div class="container text-center">
+    <div class="pagination">
+   
+      <a href="#">1</a>
+      <a href="#" class="active">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">&raquo;</a>
+    </div>
+
+    <div style="border-bottom: 1px solid #eee;padding-top: 70px;"></div>
+
+      </div>
+ 
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer style="margin-top: 100px;margin-bottom: 30px; text-align: center;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="para">
+					<p>
+						COPYRIGHT @2020 SIXTEEN CLOTHING CO., LTD. -DESIGN:<a href="#" style="color: #f33f3f;"> 
+						 TEMPLATEMO</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+
+  <script>
+    $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 500) {
+            $(".navbar").addClass("active1");
+            $(".nav-link").addClass("black-font")
+            $(".white-font").addClass("black-font")
+        } else {
+           $(".navbar").removeClass("active1");
+           $(".nav-link").removeClass("black-font")
+           $(".white-font").removeClass("black-font")
+        }
+    });
+});
+
+
+
+
+    var myVar;
+function myFunction4(){
+  myVar=setTimeout(showPage,1000);
+}
+
+function showPage()
+{
+  document.getElementById("loader").style.display="none";
+  document.getElementById("myDiv").style.display="block";
+}
+  </script>
+
+</body>
+</html>
